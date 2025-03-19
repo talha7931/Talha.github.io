@@ -3,11 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>TALHA SHAIKH</h1>
+    <header>
+        <div class="logo">
+            <h1>Your Name</h1>
+            <p>Web Developer | Programmer | Enthusiast</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I am a passionate web developer and programmer. My journey into the world of coding started with curiosity, and I strive to keep learning and improving.</p>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/400x300" alt="Your Portrait">
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Completed CS50’s Introduction to Computer Science – Python Track</li>
+            <li>Built multiple full-stack web applications</li>
+            <li>Contributor to open-source projects</li>
+        </ul>
+        <div class="ai-image">
+            <img src="https://via.placeholder.com/400x300" alt="AI Generated Image for Achievements">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch with me, feel free to drop a message!</p>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Name | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
