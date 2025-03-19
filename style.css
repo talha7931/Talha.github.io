@@ -1,2 +1,119 @@
-h1 {color : pink}
-body {background-color: maroon;}
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F0EB;
+    color: #4A2C29;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #D96D28; /* Orange Color */
+}
+
+header {
+    background-color: #F1C6A3;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #4A2C29;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+    color: #D96D28;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.image-container, .ai-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+ul li {
+    background-color: #FFD6A5;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul li:hover {
+    background-color: #F1C6A3;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #D96D28;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #D96D28;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4A2C29;
+}
+
+footer {
+    background-color: #F1C6A3;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
