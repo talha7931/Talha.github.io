@@ -7,16 +7,18 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #F4F0EB;
+    background: linear-gradient(135deg, #F4F0EB, #FFD6A5); /* Gradient background for vibrancy */
     color: #4A2C29;
     line-height: 1.6;
-    padding: 0 10px; /* Small padding to avoid edges */
+    padding: 0 10px;
     font-size: 1rem;
 }
 
+/* Headings */
 h1, h2 {
     color: #D96D28; /* Orange Color */
     font-weight: 700;
+    text-transform: uppercase; /* Adds a bold feel */
 }
 
 h1 {
@@ -25,19 +27,23 @@ h1 {
 
 h2 {
     font-size: 2.5rem;
+    letter-spacing: 1px; /* Adds space between letters */
 }
 
+/* Header */
 header {
     background-color: #F1C6A3;
     padding: 30px;
     text-align: center;
     border-bottom: 2px solid #D96D28;
     margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 header .logo h1 {
-    font-size: 3.5rem; /* Slightly larger title */
+    font-size: 3.5rem;
     margin-bottom: 10px;
+    color: #FF6B6B; /* Vibrant red-pink for contrast */
 }
 
 header nav ul {
@@ -45,7 +51,7 @@ header nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Increased gap between menu items */
+    gap: 20px;
 }
 
 header nav ul li {
@@ -57,8 +63,9 @@ header nav ul li a {
     color: #4A2C29;
     font-weight: bold;
     font-size: 1.2rem;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: #FF6B6B; /* Vibrant button background */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -67,16 +74,26 @@ header nav ul li a:hover {
     background-color: #D96D28;
 }
 
+/* Section Styles */
 section {
     padding: 60px 20px;
     margin: 40px 0;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px); /* Slight hover effect for sections */
 }
 
 section h2 {
     margin-bottom: 30px;
+    color: #FF6B6B;
 }
 
 .image-container, .ai-image {
@@ -93,15 +110,10 @@ img {
 }
 
 img:hover {
-    transform: scale(1.05); /* Slight zoom effect */
+    transform: scale(1.1); /* More pronounced zoom effect */
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
+/* List Styles */
 ul li {
     background-color: #FFD6A5;
     margin: 15px 0;
@@ -113,14 +125,16 @@ ul li {
 
 ul li:hover {
     background-color: #F1C6A3;
-    transform: translateY(-5px); /* Lift effect on hover */
+    transform: translateY(-5px);
 }
 
+/* Form Styles */
 form label {
     display: block;
     margin: 10px 0 5px;
     font-size: 1rem;
     font-weight: 500;
+    color: #D96D28; /* Make label text more vibrant */
 }
 
 form input, form textarea {
@@ -135,8 +149,8 @@ form input, form textarea {
 }
 
 form input:focus, form textarea:focus {
-    border-color: #D96D28;
-    box-shadow: 0 0 5px rgba(217, 109, 40, 0.6); /* Focus glow effect */
+    border-color: #FF6B6B; /* Focus glow effect */
+    box-shadow: 0 0 8px rgba(255, 107, 107, 0.5); /* Bright focus glow */
     outline: none;
 }
 
@@ -154,15 +168,17 @@ form button {
 
 form button:hover {
     background-color: #4A2C29;
-    transform: scale(1.05); /* Slight zoom effect */
+    transform: scale(1.05);
 }
 
+/* Footer Styles */
 footer {
     background-color: #F1C6A3;
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
     border-top: 2px solid #D96D28;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Shadow for footer */
 }
 
 footer p {
@@ -216,3 +232,4 @@ footer p {
         font-size: 1rem;
     }
 }
+``
