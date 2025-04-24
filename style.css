@@ -1,292 +1,246 @@
-box-sizing: border-box;
-
+* {
+  box-sizing: border-box;
 }
 
 body {
-font-family: 'Arial', sans-serif;
-background: linear-gradient(135deg, #F4F0EB, #FFD6A5); /* Gradient background for vibrancy */
-color: #4A2C29;
-line-height: 1.6;
-padding: 0 10px;
-font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #F4F0EB, #FFD6A5);
+  color: #4A2C29;
+  line-height: 1.6;
+  padding: 0 10px;
+  font-size: 1rem;
 }
 
-/* Headings /
 h1, h2 {
-color: #D96D28; / Orange Color /
-font-weight: 700;
-text-transform: uppercase; / Adds a bold feel */
+  color: #D96D28;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 h1 {
-font-size: 3rem;
+  font-size: 3rem;
 }
 
 h2 {
-font-size: 2.5rem;
-letter-spacing: 1px; /* Adds space between letters */
+  font-size: 2.5rem;
+  letter-spacing: 1px;
 }
 
-/* Header /
 header {
-background-color: #F1C6A3;
-padding: 30px;
-text-align: center;
-border-bottom: 2px solid #D96D28;
-margin-bottom: 30px;
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); / Subtle shadow for depth */
+  background-color: #F1C6A3;
+  padding: 30px;
+  text-align: center;
+  border-bottom: 2px solid #D96D28;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 header .logo h1 {
-font-size: 3.5rem;
-margin-bottom: 10px;
-color: #FF6B6B; /* Vibrant red-pink for contrast */
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  color: #FF6B6B;
 }
 
 header nav ul {
-list-style: none;
-padding: 0;
-display: flex;
-justify-content: center;
-gap: 20px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 header nav ul li {
-display: inline-block;
+  display: inline-block;
 }
 
 header nav ul li a {
-text-decoration: none;
-color: #4A2C29;
-font-weight: bold;
-font-size: 1.2rem;
-padding: 12px 18px;
-border-radius: 8px;
-background-color: #FF6B6B; /* Vibrant button background */
-transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  color: #4A2C29;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background-color: #FF6B6B;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header nav ul li a:hover {
-color: #fff;
-background-color: #D96D28;
+  color: #fff;
+  background-color: #D96D28;
 }
 
-/* Section Styles */
 section {
-padding: 60px 20px;
-margin: 40px 0;
-max-width: 1200px;
-margin-left: auto;
-margin-right: auto;
-background: #fff;
-border-radius: 10px;
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-transition: transform 0.3s ease-in-out;
+  padding: 40px 15px;
+  margin: 40px 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
 }
 
 section:hover {
-transform: translateY(-5px); /* Slight hover effect for sections */
+  transform: translateY(-5px);
 }
 
 section h2 {
-margin-bottom: 30px;
-color: #FF6B6B;
+  margin-bottom: 30px;
+  color: #FF6B6B;
 }
 
 .image-container, .ai-image {
-text-align: center;
-margin-top: 30px;
-border-radius: 10px;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 10px;
 }
 
 img {
-max-width: 100%;
-height: auto;
-border-radius: 10px;
-transition: transform 0.3s ease-in-out;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
 img:hover {
-transform: scale(1.1); /* More pronounced zoom effect */
+  transform: scale(1.1);
 }
 
-/* List Styles */
 ul li {
-background-color: #FFD6A5;
-margin: 15px 0;
-padding: 15px;
-border-radius: 8px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+  background-color: #FFD6A5;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
 }
 
 ul li:hover {
-background-color: #F1C6A3;
-transform: translateY(-5px);
+  background-color: #F1C6A3;
+  transform: translateY(-5px);
 }
 
-/* Form Styles /
 form label {
-display: block;
-margin: 10px 0 5px;
-font-size: 1rem;
-font-weight: 500;
-color: #D96D28; / Make label text more vibrant */
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #D96D28;
 }
 
-form input, form textarea {
-width: 100%;
-padding: 12px;
-margin-bottom: 15px;
-border: 1px solid #D96D28;
-border-radius: 8px;
-font-size: 1rem;
-background-color: #fff;
-transition: border-color 0.3s ease, box-shadow 0.3s ease;
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #D96D28;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-form input:focus, form textarea:focus {
-border-color: #FF6B6B; /* Focus glow effect /
-box-shadow: 0 0 8px rgba(255, 107, 107, 0.5); / Bright focus glow */
-outline: none;
+form input:focus,
+form textarea:focus {
+  border-color: #FF6B6B;
+  box-shadow: 0 0 8px rgba(255, 107, 107, 0.5);
+  outline: none;
 }
 
 form button {
-padding: 12px 20px;
-background-color: #D96D28;
-color: white;
-border: none;
-border-radius: 8px;
-cursor: pointer;
-font-size: 1.1rem;
-font-weight: bold;
-transition: background-color 0.3s ease, transform 0.2s ease;
+  padding: 10px 18px;
+  background-color: #D96D28;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 form button:hover {
-background-color: #4A2C29;
-transform: scale(1.05);
+  background-color: #4A2C29;
+  transform: scale(1.05);
 }
 
-/* Footer Styles /
 footer {
-background-color: #F1C6A3;
-text-align: center;
-padding: 20px 0;
-margin-top: 50px;
-border-top: 2px solid #D96D28;
-box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); / Shadow for footer */
+  background-color: #F1C6A3;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  border-top: 2px solid #D96D28;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
 
 footer p {
-font-size: 1rem;
-color: #4A2C29;
-}
-section {
-position: relative;
-padding: 40px 15px;
+  font-size: 1rem;
+  color: #4A2C29;
 }
 
-/* About content /
 .about-content {
-position: relative;
-z-index: 1; / Keeps content on top of the video /
-color: white; / You can adjust text color as per background contrast /
-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); / For better text readability */
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-form input, form textarea {
-font-size: 1.1rem;
-}
-
-form button {
-font-size: 1rem;
-padding: 10px 18px;
-}
-video-section {
-position: relative;
-width: 100%;
-height: 400px; /* adjust based on design */
-overflow: hidden;
-}
-
+/* New style for video section */
 .video-section video {
-width: 100%;
-height: 100%;
-object-fit: cover;
-display: block;
-filter: brightness(0.8) contrast(1.1) saturate(1.2); /* gives it a cinematic pop /
-border-top: 5px solid #ccc; / optional divider /
-}
-/ Media Queries */
-@media (max-width: 480px) {
-body {
-font-size: 0.9rem;
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: cover;
+  display: block;
 }
 
-header .logo h1 {  
-    font-size: 2rem;  
-}  
-
-section h2 {  
-    font-size: 2rem;  
-}  
-
-form input, form textarea {  
-    font-size: 1rem;  
-}  
-
-form button {  
-    font-size: 1rem;  
-}
-
-}
-
-/* Responsive Design */
+/* Responsive media queries */
 @media (max-width: 768px) {
-header .logo h1 {
-font-size: 2.5rem;
-}
+  header .logo h1 {
+    font-size: 2.5rem;
+  }
 
-header nav ul {  
-    flex-direction: column;  
-    gap: 10px;  
-}  
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-section {  
-    padding: 40px 15px;  
-}  
+  section {
+    padding: 40px 15px;
+  }
 
-form input, form textarea {  
-    font-size: 1.1rem;  
-}  
+  form input,
+  form textarea {
+    font-size: 1.1rem;
+  }
 
-form button {  
-    font-size: 1rem;  
-    padding: 10px 18px;  
-}
-
+  form button {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
 }
 
 @media (max-width: 480px) {
-body {
-font-size: 0.9rem;
+  body {
+    font-size: 0.9rem;
+  }
+
+  header .logo h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 1rem;
+  }
+
+  form button {
+    font-size: 1rem;
+  }
 }
-
-header .logo h1 {  
-    font-size: 2rem;  
-}  
-
-section h2 {  
-    font-size: 2rem;  
-}  
-
-form input, form textarea {  
-    font-size: 1rem;  
-}  
-
-form button {  
-    font-size: 1rem;  
-}
-
-    
